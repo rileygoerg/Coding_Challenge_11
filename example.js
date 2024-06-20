@@ -28,7 +28,13 @@ function main() {
          })
         .attr('height', barHeight - margin);
 
-   
+    group.append('text')
+        .attr('x', function(d){
+            return (scale(d));
+        })
+       .attr('y', barHeight / 2)
+       .attr('dy', '.35em')
+       .text(function(d){return d;});
    
 
 
