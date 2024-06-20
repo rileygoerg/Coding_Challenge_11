@@ -8,6 +8,8 @@ function main() {
    .append("svg")
    .attr('width', width)
    .attr('height', barHeight * barData.length);
+
+   var scale = d3.scaleLinear([50, 500])
    
    
 
